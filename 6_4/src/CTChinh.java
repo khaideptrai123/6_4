@@ -14,7 +14,7 @@ public class CTChinh {
 		   Socket s = socketServer.accept();
 		   id ++; 
 		   //new LuongLamViec(s, id++).start();
-		   xemfile luongTask = new xemfile(s, id);
+		   LuongLamViec luongTask = new LuongLamViec(s, id);
 		   luongTask.start();
 		
 		}
